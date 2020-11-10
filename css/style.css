@@ -1,0 +1,294 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: red;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.header {
+    width: 100%;
+    height: 58px;
+    background-color: rgba(0,0,0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 79px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.container-header-login {
+    display: flex;
+    align-items: center;
+}
+
+.fa-calendar-alt, .fa-envelope-open, .fa-compass {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-right: 17px;
+}
+
+.logo:hover, .fa-calendar-alt:hover, .fa-envelope-open:hover, .fa-compass:hover, .header-sign-in a:hover, .header-sign-in a:hover {
+    color: #3CB878;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-icons a:last-child {
+    margin-right: 25px;
+}
+
+.header-login-vline {
+    width: 27px;
+    height: 19px;
+    border-left: 1px solid rgba(255, 255, 255, 0.9);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.header-sign-in, .header-sign-in a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.main {
+    width: 100%;
+    min-height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form {
+    width: 444px;
+    height: 584px;
+    padding: 29px 60px 38px 60px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.52);
+    position: relative;
+}
+
+.form-green-block {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 29px;
+    background: #3CB878;
+}
+
+.form-container-sign-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form-sign-in {
+    font-size: 20px;
+    line-height: 20px;
+    color: #434343;
+}
+
+.form-log-in{
+    font-size: 14px;
+    line-height: 14px;
+    color: #3CB878;
+}
+
+.form-log-in:hover {
+    text-decoration: underline;
+    color: #3CB878;
+}
+
+.form-container-facebook-google-plus {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook-container, .google-plus-container {
+    display: flex;
+    align-items: center;
+    width: 158px;
+    height: 48px;
+    border-radius: 5px;
+}
+
+.facebook-container {
+    background: #305DB8;
+}
+
+.google-plus-container {
+    background: #DF4A32;
+}
+
+.fa-facebook-f, .fa-google-plus-g {
+    text-align: center;
+    width: 64px;
+    font-size: 24px;
+    border-right: 1px solid rgba(10, 22, 47, 0.1);
+    color: #FFFFFF;
+}
+
+.facebook-text, .google-plus-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.container-for-or {
+    margin-top: 30px;
+    display: flex;
+}
+
+.hline {
+    width: 152px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 5px;
+}
+
+.or {
+    font-size: 14px;
+    line-height: 14px;
+    color: #848484;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 324px;
+    height: 46px;
+    margin-top: 15px;
+    background: #FFFFFF;
+    border: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #BEBEBE;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+}
+
+.container-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.container-checkbox {
+    margin-top: 15px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #3CB878;
+    border-bottom: 4px solid #3CB878;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after
+{
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after
+{
+    opacity: 1;
+}
+
+
+.create-account {
+    width: 324px;
+    height: 46px;
+    left: 60px;
+    top: 500px;
+    background: rgba(60, 184, 120, 0.8);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
